@@ -40,8 +40,8 @@ html,body{
     color: rgb(255, 255, 255);
 
     /* color: white; */
-
-    transition:all  0.2s 0.5s linear !important;
+    transition:all  0.2s linear !important;
+    
 }
 
 .yourself{
@@ -104,6 +104,7 @@ html,body{
 }
 
 .sticker-buttons:hover{
+    /* transition: 0.5s; */
     opacity: 0.9 !important;
 }
 .sticker-buttons .button{
@@ -115,6 +116,7 @@ html,body{
 
 
 .sticker-buttons div:hover div{
+    transition:all  0.2s 0.5s linear !important;
     opacity: 1;
     display: block;
     top: 110%;
@@ -246,6 +248,7 @@ html,body{
 .people-sticker-buttons div:hover div{
     opacity: 1;
     display: block;
+    transition:all  0.2s 0.5s linear !important;
 }
 
 .people-sticker-buttons div #hint-1{
@@ -363,7 +366,7 @@ html,body{
 }
 
 .buttons>div:hover div{
-    
+    transition:all  0.2s 0.5s linear !important;
     width:max-content;
     opacity: 1;
     display: block;
@@ -427,6 +430,7 @@ html,body{
 }
 .others>div:hover div{
     opacity: 1;
+    transition:all  0.2s 0.5s linear !important;
     width:max-content;
     display: block;
 
