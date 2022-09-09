@@ -1,0 +1,528 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+}
+.box{
+    height: 100%;
+}
+.window{
+    height: 90%;
+    background-color: aqua;
+    
+    background-color: rgb(32, 33, 36);
+}
+
+
+.hint{
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translate(-50%);
+
+    /* display: none; */
+    width: 50px;
+    opacity: 0;
+    width:max-content;
+    padding: 3px 8px;
+    height: 20px;
+    background-color: rgb(85, 85, 85);
+    color: rgb(255, 255, 255);
+
+    /* color: white; */
+
+    transition:all  0.2s 0.5s linear !important;
+}
+
+.yourself{
+    
+    background-color: rgb(32, 33, 36);
+    float: left;
+    position: relative;;
+    width: 70%;
+    height: 100%;
+}
+.muted{
+    border-radius: 50%;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    /* background-color: blue; */
+    top: 30px;
+    right: 15px;
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("imgs/mute-icon.png");
+}
+.your-sticker{
+    border-radius: 50%;
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    left: 50%;
+    top: 50%;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("imgs/sticker1.jpg");
+
+    transform: translate(-50%,-50%);
+}
+.yourself:hover .sticker-buttons{
+    opacity: 0.75;
+    cursor: pointer;
+}
+.sticker-buttons{
+    opacity: 0;
+    border-radius: 27px;
+    width: 135px;
+    height: 50px;
+    background-color: rgb(44, 44, 44);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+
+    background-image: url("imgs/sticker-buttons.png");
+    background-size: 110px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sticker-buttons:hover{
+    opacity: 0.9 !important;
+}
+.sticker-buttons .button{
+    float: left;
+    width: 45px;
+    height: 45px;
+    background-color: #8e8e8e00;
+}
+
+
+.sticker-buttons div:hover div{
+    opacity: 1;
+    display: block;
+}
+.sticker-buttons div #hint-1{
+    left: 15%;
+    top: 120%;
+}
+.sticker-buttons div #hint-2{
+    top: 120%;
+}
+.sticker-buttons div #hint-3{
+    left: 85%;
+    top: 120%;
+}
+
+
+.info{
+    position: absolute;
+    left: 13px;
+    bottom: 0px;
+    height: 30px;
+    width: 80px;
+    /* background-color: aliceblue; */
+    color: white;
+}
+.pin{
+    width: 30px;
+    height: 100%;
+    float: left;
+    background-image: url("imgs/pin.png");
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: blue; */
+}
+.info span{
+    display: inline-block;
+    width: 50px;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.people-sticker-buttons{
+    opacity: 0;
+    border-radius: 27px;
+    width: 135px;
+    height: 50px;
+    background-color: rgb(44, 44, 44);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+
+    background-image: url("imgs/people-sticker-buttons.png");
+    background-size: 110px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.participants{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    
+    /* overflow:auto; */
+    color: white;
+
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.row{
+    display: flex;
+}
+.people{
+    border-radius: 7px;
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 140px;
+    margin: 6px;
+    background-color: rgb(61, 64, 67);
+}
+.people .muted{
+    top: 10px;
+    right: 10px;
+}
+.people-last{
+    border-radius: 7px;
+    position: relative;
+    width: 240px;
+    height: 140px;
+    margin: 6px;
+    background-color: rgb(61, 64, 67);
+}
+.people .sticker{
+    border-radius: 50%;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    top: 50%;
+    background-color: bisque;
+    transform: translate(-50%,-50%);
+}
+.people .people-sticker-buttons{
+    width: 100px;
+    height: 40px;
+    background-size: 80px;
+}
+.people:hover .people-sticker-buttons{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.people-sticker-buttons:hover{
+    opacity: 0.9 !important;
+}
+.people-sticker-buttons .button{
+    float: left;
+    width: 33px;
+    height: 40px;
+    background-color: #8e8e8e00;
+}
+.people-sticker-buttons div:hover div{
+    opacity: 1;
+    display: block;
+}
+
+.people-sticker-buttons div #hint-1{
+    left: 15%;
+    top: 120%;
+}
+.people-sticker-buttons div #hint-2{
+    top: 120%;
+}
+.people-sticker-buttons div #hint-3{
+    left: 85%;
+    top: 120%;
+}
+
+
+.people span{
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+}
+.sticker{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#sticker-1th{
+    background-image: url("imgs/sticker2.jpg");
+}
+#sticker-2th{
+    background-position: 32% -1px;
+    background-image: url("imgs/sticker5.jpg");
+}
+#sticker-3th{
+    background-image: url("imgs/sticker4.jpg");
+}
+#sticker-4th{
+    background-image: url("imgs/sticker3.jpg");
+}
+#sticker-5th{
+    background-image: url("imgs/sticker6.jpg");
+}
+
+.people-last .sticker{
+    border-radius: 50%;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 50%;
+    top: 50%;
+    background-color: bisque;
+    transform: translate(-50%,-50%);
+}
+.people-last .muted{
+    top: 10px;
+    right: 10px;
+}
+.people-last span{
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+}
+.people-last .people-sticker-buttons{
+    width: 100px;
+    height: 40px;
+    background-size: 80px;
+}
+.people-last:hover .people-sticker-buttons{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.room-info,.buttons,.others{
+    font-size: 15px;
+    padding: 15px;
+    display: flex;
+    width: 330px;
+    height: 40px;
+    line-height: 60px;
+    color: white;
+}
+.bar{
+    
+    background-color: rgb(32, 33, 36);
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+/* .room-info{
+    background-color: green;
+} */
+.buttons{
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons>div{
+    position: relative;
+
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    width: 43px;
+    height: 43px;
+    
+    background-position: center;
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    background-color: rgb(61, 64, 67);
+
+    cursor: pointer;
+}
+
+.buttons>div:hover div{
+    
+    width:max-content;
+    opacity: 1;
+    display: block;
+}
+/* .buttons .mute-button{
+    background-image: url("imgs/mute-1.png");
+} */
+/* .buttons .mute-button:active{
+    background-color:  rgb(216, 81, 64);
+    background-image: url("imgs/mute-2.png");
+}
+.buttons .mute-button:focus{
+    background-color: rgb(216, 81, 64);
+    background-image: url("imgs/mute-2.png");
+} */
+
+/* .buttons .camera-button{
+    background-image: url("imgs/camera-1.png");
+} */
+.buttons .hand-button{
+    background-image: url("imgs/hand.png");
+}
+.buttons .share-button{
+    background-image: url("imgs/share.png");
+}
+.buttons .other-option-button{
+    background-image: url("imgs/other-option.png");
+}
+
+.buttons .hang-up-button{
+    background-image: url("imgs/hang-up.png");
+    background-color: rgb(216, 81, 64);
+    border-radius: 21px;
+    width: 60px;
+
+    background-size: 26px 26px;
+}
+
+
+.others{
+    padding-right: 20px;
+    /* background-color: green; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.others>div{
+    position: relative;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    width: 36px;
+    height: 36px;
+
+    background-position: center;
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+}
+.others>div:hover div{
+    opacity: 1;
+    width:max-content;
+    display: block;
+
+}
+.others .info-button{
+    background-image: url("imgs/info-button.png");
+}
+.others .participant-button{
+    background-image: url("imgs/participant-button.png");
+    position: relative;
+}
+.others .participant-button .number{
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+
+    border-radius: 10px;
+
+    position: absolute;
+    top: -10px;
+    right: -6px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(96, 99, 103);
+}
+.others .chat-button{
+    background-image: url("imgs/chat-button.png");
+}
+.others .activity-button{
+    background-image: url("imgs/activity-button.png");
+}
+.others .control-button{
+    background-image: url("imgs/control-button.png");
+}
+.others .control-hint{
+    left: -20%;
+}
+
+
+
+
+
+
+/* 下面是為了不用js切換按鈕樣式的神奇東西 */
+/* It just work, but I don't know how */
+.btn0 {
+    position: fixed;
+    left: 100%;
+    top: 100%;
+}
+.button0 {
+    position: relative;
+
+    display: block;
+    border-radius: 50%;
+    
+    width: 43px;
+    height: 43px;
+    
+    background-position: center;
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    background-image: url("imgs/mute-1.png");
+    cursor: pointer;
+}
+.btn0:checked + label {  
+    background-color: rgb(216, 81, 64);
+    color: white;
+    background-image: url("imgs/mute-2.png");
+}
+
+
+
+.btn1 {
+    position: fixed;
+    left: 100%;
+    top: 100%;
+}
+.button1 {
+    position: relative;
+
+    display: block;
+    border-radius: 50%;
+    
+    width: 43px;
+    height: 43px;
+    
+    background-position: center;
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    background-image: url("imgs/camera-1.png");
+    cursor: pointer;
+}
+.btn1:checked + label {  
+    background-color:rgb(216, 81, 64);
+    color: white;
+    background-image: url("imgs/camera-2.png");
+    }
+    .scale:blank + label {
+    color: white;
+}
+
+

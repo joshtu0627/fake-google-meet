@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rwd.css">
+</head>
+<body>
+    <div class="box">
+        <div class="window">
+            <div class="yourself">
+                <div class="muted"></div>
+                <div class="your-sticker">
+                    <div class="sticker-buttons">
+                        <div class="sticker-pin-button button">
+                            <div class="sticker-buttons-hint hint" id="hint-1">在主畫面中取消固定你自己</div>
+                        </div>
+                        <div class="sticker-remove-button button">
+                            <div class="sticker-buttons-hint hint" id="hint-2">無法在這個版面配置中移除你的圖塊</div>
+                        </div>
+                        <div class="sticker-minimum-button button">
+                            <div class="sticker-buttons-hint hint" id="hint-3">固定時無法最小化</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="pin"></div>
+                    <span>你</span>
+                </div>
+            </div>
+            <div class="participants">
+                <div class="row">
+                    <div class="people">
+                        <div class="muted"></div>
+                        <div class="sticker" id="sticker-1th">
+                            <div class="people-sticker-buttons">
+                                <div class="people-sticker-pin-button button">
+                                    <div class="people-sticker-buttons-hint hint" id="hint-1">將李彥儒固定在主畫面</div>
+                                </div>
+                                <div class="people-sticker-pin-button button">
+                                    <div class="people-sticker-buttons-hint hint" id="hint-2">你無法將他人取消靜音</div>
+                                </div>
+                                <div class="people-sticker-pin-button button">
+                                    <div class="people-sticker-buttons-hint hint" id="hint-3">將李彥儒從通話中移除</div>
+                                </div>
+                            </div>
+                        </div>
+                        <span>李彥儒</span>
+                    </div>
+                    <div class="people">
+                        <div class="muted"></div>
+                        <div class="sticker" id="sticker-2th">
+                            <div class="people-sticker-buttons">
+                                <div class="people-sticker-pin-button button">
+                                    <div class="people-sticker-buttons-hint hint" id="hint-1">將陳孟宏固定在主畫面</div>
+                                </div>
+                                <div class="people-sticker-pin-button button">
+                                    <div class="people-sticker-buttons-hint hint" id="hint-2">你無法將他人取消靜音</div>
+                                </div>
+                                <div class="people-sticker-pin-button button">
+                                    <div class="people-sticker-buttons-hint hint" id="hint-3">將陳孟宏從通話中移除</div>
+                                </div>
+                            </div>
+                        </div>
+                        <span>陳孟宏</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="people">
+                        <div class="muted"></div>
+                        <div class="sticker" id="sticker-3th">
+                            <div class="people-sticker-buttons">
+                                <div class="people-sticker-pin-button button">
+                                    <div class="people-sticker-buttons-hint hint" id="hint-1">將yi h固定在主畫面</div>
+                                </div>
+                                <div class="people-sticker-pin-button button">
+                                    <div class="people-sticker-buttons-hint hint" id="hint-2">你無法將他人取消靜音</div>
+                                </div>
+                                <div class="people-sticker-pin-button button">
+                                    <div class="people-sticker-buttons-hint hint" id="hint-3">將yi h從通話中移除</div>
+                                </div>
+                            </div>
+                        </div>
+                        <span>yi h</span>
+                    </div>
+                    <div class="people">
+                        <div class="muted"></div>
+                        <div class="sticker" id="sticker-4th">
+                            <div class="people-sticker-buttons">
+                                <div class="people-sticker-pin-button button">
+                                    <div class="people-sticker-buttons-hint hint" id="hint-1">將劉慕德固定在主畫面</div>
+                                </div>
+                                <div class="people-sticker-pin-button button">
+                                    <div class="people-sticker-buttons-hint hint" id="hint-2">你無法將他人取消靜音</div>
+                                </div>
+                                <div class="people-sticker-pin-button button">
+                                    <div class="people-sticker-buttons-hint hint" id="hint-3">將劉慕德從通話中移除</div>
+                                </div>
+                            </div>
+                        </div>
+                        <span>劉慕德</span>
+                    </div>
+                </div>
+                <div class="row last-row">
+                    <div class="people-last">
+                        <div class="muted"></div>
+                        <div class="sticker" id="sticker-5th">
+                            <div class="people-sticker-buttons">
+                                <div class="people-sticker-pin-button button">
+                                    <div class="people-sticker-buttons-hint hint" id="hint-1">將童子瑜固定在主畫面</div>
+                                </div>
+                                <div class="people-sticker-pin-button button">
+                                    <div class="people-sticker-buttons-hint hint" id="hint-2">你無法將他人取消靜音</div>
+                                </div>
+                                <div class="people-sticker-pin-button button">
+                                    <div class="people-sticker-buttons-hint hint" id="hint-3">將童子瑜從通話中移除</div>
+                                </div>
+                            </div>
+                        </div>
+                        <span>童子瑜</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="room-info">
+                凌晨12:43 &ensp;|  &ensp;Web Programming
+            </div>
+            <div class="buttons">
+                <div class="mute-button" tabindex="1">
+                    <input id="btn0" class="btn0" name="btn0" type="checkbox" value="">
+                    <label for="btn0" class="button0"></label>
+                    <div class="mute-hint hint">開啟麥克風 (Ctrl + D)</div>
+                </div>
+                <div class="camera-button">
+                    <input id="btn1" class="btn1" name="btn1" type="checkbox" value="">
+                    <label for="btn1" class="button1"></label>
+                    <div class="camera-hint hint">開啟攝影機 (Ctrl + E)</div>
+                </div>
+                <div class="hand-button">
+                    <div class="hand-hint hint">舉手</div>
+                </div>
+                <div class="share-button">
+                    <div class="share-hint hint">立即分享螢幕畫面</div>
+                </div>
+                <div class="other-option-button">
+                    <div class="other-option-hint hint">其他選項</div>
+                </div>
+                <div class="hang-up-button">
+                    <div class="hang-up-hint hint">退出通話</div>
+                </div>
+            </div>
+            <div class="others">
+                <div class="info-button">
+                    <div class="info-hint hint">會議詳細資料</div>
+                </div>
+                <div class="participant-button">
+                    <span class="number">6</span>
+                    <div class="participant-hint hint">顯示所有參與者</div>
+                </div>
+                <div class="chat-button">
+                    <div class="chat-hint hint">與所有參與者進行即時通訊</div>                    
+                </div>
+                <div class="activity-button">
+                    <div class="activity-hint hint">活動</div>                    
+                </div>
+                <div class="control-button">
+                    <div class="control-hint hint">主辦人控制項</div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+@media screen and (max-width:1350px) and (min-width:500px){
+    /* .room-info{
+        width: 100px;
+        margin-left: -90px;
+    } */
+    .people{
+        width: 100%;
+        height: 40%;
+    }
+    .row{
+        width: 100%;
+        height: 30%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .last-row{
+        height: 15%;
+    }
+    .people-last{
+        width: 100%;
+        height: 80%;
+    }
+    .people-last span{
+        left: 12px;
+        bottom: 12px;
+    }
+    .people-last .sticker{
+        width: 60px;
+        height: 60px;
+    }
+    .people-last span{
+        bottom: 12px;
+    }
+}
+@media screen and (max-width:1000px){
+    .window{
+        height: 80%;
+    }
+    .bar{
+        height: 20%;
+    }
+    .bar div{
+        flex-wrap: wrap;
+    }
+    .bar>div>div{
+        width: 35px;
+        height: 35px;
+        background-size: 18px 18px;
+    }
+    .hang-up-button{
+        width: 40px !important;
+    }
+    .bar div>label{
+        width: 35px;
+        height: 35px;
+        background-size: 18px 18px;
+    }
+    .muted{
+        width: 15px;
+        height: 15px;
+    }
+}
+@media screen and (max-width:700px){
+    .room-info{
+        width: 0px;
+    }
+    .bar{
+        justify-content: center;
+    }
+    .bar>div{
+        width: 300px;
+    }
+    .people{
+        width: 100%;
+        height: 40%;
+    }
+    .row{
+        width: 100%;
+        height: 30%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .last-row{
+        height: 15%;
+    }
+    .people-last{
+        width: 100%;
+        height: 80%;
+    }
+    .window{
+        height: 70%;
+    }
+    .bar{
+        height: 30%;
+    }
+    .bar div{
+        flex-wrap: wrap;
+    }
+    .sticker{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:460px){
+    .window{
+        height: 65%;
+    }
+    .bar{
+        height: 35%;
+    }
+    .room-info{
+        display: none;
+    }
+    .sticker{
+        display: none;
+    }
+}
+
+@media screen and (max-height:700px){
+    .window{
+        height:80%;
+    }
+    .bar{
+        height: 20%;
+    }
+    .people{
+        width: 100%;
+        height: 40%;
+    }
+    .row{
+        width: 100%;
+        height: 30%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .last-row{
+        height: 15%;
+    }
+    .people-last{
+        width: 100%;
+        height: 80%;
+    }
+    .window{
+        height:65%;
+    }
+    .bar{
+        height: 35%;
+    }
+    .sticker{
+        width: 40px !important;
+        height: 40px !important;
+    }
+    .people-last span{
+        bottom: 12px;
+        left: 12px;
+    }
+}
+@media screen and (max-height:540px){
+    .sticker{
+        display: none;
+    }
+    .window{
+        height:50%;
+    }
+    .bar{
+        height: 50%;
+    }
+    .people{
+        padding: 0;
+    }
+    .people span{
+        bottom: 3px;
+    }
+    .people-last span{
+        bottom: 3px;
+    }
+    .muted{
+        top:2px !important;
+        right: 2px !important;
+    }
+}
