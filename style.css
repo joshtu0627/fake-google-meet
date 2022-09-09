@@ -12,7 +12,7 @@ html,body{
     height: 100%;
 }
 .window{
-    height: 90%;
+    height: 87%;
     background-color: aqua;
     
     background-color: rgb(32, 33, 36);
@@ -330,7 +330,7 @@ html,body{
 .bar{
     
     background-color: rgb(32, 33, 36);
-    height: 10%;
+    height: 13%;
     display: flex;
     align-items: center;
     justify-content:space-between;
