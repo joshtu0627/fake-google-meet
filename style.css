@@ -20,6 +20,7 @@ html,body{
 
 
 .hint{
+    z-index: 9999;
     font-size: 12px;
     letter-spacing: 1px;
     border-radius: 6px;
@@ -116,17 +117,19 @@ html,body{
 .sticker-buttons div:hover div{
     opacity: 1;
     display: block;
+    top: 110%;
 }
 .sticker-buttons div #hint-1{
     left: 15%;
-    top: 120%;
+    top: 110%;
 }
 .sticker-buttons div #hint-2{
     top: 120%;
+    top: 110%;
 }
 .sticker-buttons div #hint-3{
     left: 85%;
-    top: 120%;
+    top: 110%;
 }
 
 
@@ -247,18 +250,19 @@ html,body{
 
 .people-sticker-buttons div #hint-1{
     left: 15%;
-    top: 120%;
+    top: 105%;
 }
 .people-sticker-buttons div #hint-2{
-    top: 120%;
+    top: 105%;
 }
 .people-sticker-buttons div #hint-3{
     left: 85%;
-    top: 120%;
+    top: 105%;
 }
 
 
 .people span{
+    z-index: 0;
     position: absolute;
     left: 12px;
     bottom: 12px;
@@ -301,8 +305,8 @@ html,body{
 }
 .people-last span{
     position: absolute;
-    left: 8px;
-    bottom: 8px;
+    left: 12px;
+    bottom: 12px;
 }
 .people-last .people-sticker-buttons{
     width: 100px;
